@@ -1,0 +1,10 @@
+{{ range.Site.Params.experience2.list }}
+<h4 style="text-decoration: underline;">{{ .activity }}</h4>
+<p {{if .details }}class="mb-0"{{ end }}>
+  {{ .dates | markdownify }} &middot; {{ if .url }}
+  <a href="{{ .url }}">{{ .details }}</a>
+  {{ else }} {{ .details }} {{ end }}
+</p>
+
+
+{{ end }}

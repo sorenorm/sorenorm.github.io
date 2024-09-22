@@ -1,0 +1,9 @@
+<ul class="pl-0">
+    {{ range .Site.Params.hobby2.list }}
+    <li class="list-unstyled mb-2">
+      <i class="fab {{ .icon }}" style="font-size: 2em; margin-right: 10px;"></i> <!-- Enlarge the icon -->
+      <span style="font-size: 1.5em;">{{ .name }}</span> <!-- Enlarge the text -->
+    </li>
+    {{ end }}
+  </ul>
+  

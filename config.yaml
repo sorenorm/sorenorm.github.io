@@ -1,0 +1,215 @@
+baseURL: https://aafu.pages.dev/
+languageCode: en-us
+build:
+  writeStats: true
+params:
+  title: aafu theme
+  author: Søren Orm Hansen
+  description: Personal Website for Søren Orm
+  copyright: >-
+    powered by [hugo](https://gohugo.io/) & deployed on
+    [Cloudflare](https://www.cloudflare.com/)
+  theme:
+    mainTheme: dark
+    showAttribute: true
+    singlePage: false
+  favicons:
+    use: true
+    metas: |2-
+              <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+              <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+              <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+              <link rel="manifest" href="site.webmanifest">
+              <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
+              <link rel="shortcut icon" href="favicon.ico">
+
+  profile:
+    name: "Søren Orm Hansen"
+    tagline: Social Data Scientist
+    location: "St Andrews, Scotland"
+    photo: profile2.jpg
+  social:
+    title: Links
+    list:
+      - icon: fas fa-envelope
+        url: mailto:sorenorm@live.dk
+        title: E-mail Me
+      - icon: fab fa-linkedin-in
+        url: "https://www.linkedin.com/in/s%C3%B8ren-orm-hansen-604333281/"
+        title: LinkedIn
+      - icon: fab fa-stack-overflow
+        url: "https://stackoverflow.com/users/26797323/sorm"
+        title: StackOverflow
+      - icon: fab fa-github
+        url: "https://github.com/sorenorm"
+        title: GitHub
+  showInAccordion:
+    - item: aboutme
+      expand: true
+    - item: education
+    - item: experience
+    - item: experience2
+    - item: publication
+    - item: project
+    #- item: skill
+    - item: hobby
+    - item: hobby2
+  aboutme:
+    title: About Me
+    icon: fas fa-user
+    description: I am currently studying for a MSc. in Social Data Science at the University of Copenhagen. My professional interests include working with data science methods for social good, for understanding cognition, and investigating social complexity.
+  education:
+    title: Education
+    icon: fas fa-graduation-cap
+    list:
+      - degree: MSc. in Social Data Science
+        college: University of Copenhagen
+        dates: 2022 - *Present*
+        thesis_title: "Beyond Representation: Diversity of Speakers and Information Diffusion in European Parliaments"
+        thesis_url: "#"
+      - degree: BSc. in Cognitive Science and Mathematics
+        college: Aarhus University
+        dates: 2019 - 2022
+  experience:
+    title: Experiences
+    icon: fas fa-briefcase
+    list:
+      - position: Data Analyst
+        dates: March 2021 - September 2022
+        company: Systematic A/S
+        url: "https://systematic.com/en-gb/"
+        details: |1-
+          - Creating statistical models informing business decisions 
+          - Reporting insights for statistical literate and non-technical audiences 
+          - Helped creating project specific dash boards in PowerBI 
+          - Data quality assurance
+      - position: Treasurer
+        dates: December 2020 - June 2022
+        company: Cognitive Science Association
+        details: |1-
+          - Co-leading a team of 20 volunteers
+          - Organising biweekly educational and social events for 200+ guests
+          - Playing a central role in stabilizing the organization during the post-COVID recovery period.
+  experience2:
+    title: Extra-Curricular Activities
+    icon: fas fa-star
+    list:
+      - activity: St Andrews AI Safety Fellowship
+        dates: '2024'
+        company: ''
+        url: ''
+        details: |1-
+          Investigating AI risks, regulatory challenges, and long-term impact.
+      - activity: Data Science Volunteer
+        dates: '2024'
+        company: ''
+        url: ''
+        details: |1-
+          Consulted in the development of a vision transformer for key-point tracking, assisted with computational analysis of experiments, and configured and maintained GPUs in the Allodi laboratory at St Andrews University.
+      - activity: Presenter at St Leonard's Postgraduate Collage Lecture Series
+        dates: '2023'
+        company: ''
+        url: ''
+        details: |1-
+          Invited to present my research on parliamentary representation using ParlaMint2.1.
+      - activity: Madagascar Research and Conservation Institute
+        dates: '2024'
+        company: ''
+        url: ''
+        details: |1-
+          Community development volunteer, working on various projects including building a clinic for a local doctor.
+      - activity: Save the Children Youth
+        dates: '2018-2019'
+        company: ''
+        url: ''
+        details: |1-
+          Volunteer, helping refugee children getting to know their new home town.
+  publication:
+    title: Publications
+    icon: fas fa-book
+    format:
+      - date
+      - title
+      - authors
+      - journal
+    types:
+      - Journal Articles
+      #- Proceedings
+    list:
+      - title: >-
+          EMMA: Danish Natural-Language Processing of Emotion in Text
+        authors: "Esben Kran and Søren Orm"
+        date: "2020"
+        journal: "Journal of Language Works Vol. 5 (No. 1), 92-110"
+        url: "https://tidsskrift.dk/lwo/article/view/121221"
+        type: Journal Articles
+      #- title: >-
+      #    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      #    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      #  authors: "F Last, F Second, P secondary"
+      #  date: "2018"
+      #  journal: "Journal of Field 52 (16), 9033-9044"
+      #  url: "#"
+      #  type: Journal Articles
+      #- title: >-
+      #    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      #    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      #  authors: "F Last, F Second, P secondary"
+      #  date: "2018"
+      #  journal: "Journal of Field 52 (16), 9033-9044"
+      #  url: "#"
+      #  type: Proceedings
+  project:
+    title: Projects
+    icon: fas fa-project-diagram
+    list:
+      - title: Learning 3D.js
+        url: "https://www.udemy.com/course/masteringd3js/"
+        description: I am currently taking my data visualisation skills to the next level learning 3D.js. 3D.js allows for dynamic and interactive visualisation of data and easy integration on web sites.
+      - title: Creating a GDPR bot
+        url: "#"
+        description: I am learning the langchain workflow through the creation of a constructed agent, which can answer questions pertaining to the GDPR.
+      #- title: Project 3
+      #  url: "#"
+      #  description: Description of the project
+      #- title: Project 4
+      #  url: "#"
+      #  description: Description of the project
+  #skill:
+  #  title: Skills
+  #  panelId: skill-panel
+  #  icon: fas fa-cogs
+  #  list:
+  #    - skill: "Skill 1, Skill 2"
+  #      skillrating: 90
+  #    - skill: Skill 3
+  #      skillrating: 80
+  #    - skill: Skill 4
+  #      skillrating: 50
+  hobby:
+    title: Skills
+    icon: fas fa-cogs
+    list:
+      - hobby: Effective Communication \t Data Ethics
+      - hobby: GDPR
+      - hobby: Advanced Statistics
+      - hobby: Data Visualisation
+      - hobby: Web Scraping
+      - hobby: Machine learning
+      - hobby: Deep learning
+      - hobby: NLP
+      - hobby: Cross-Disciplinary Collaboration
+      - hobby: Data Management
+      - hobby: PowerBI
+  hobby2:
+    title: Programming Languages
+    icon: fas fa-code
+    list:
+      - icon: "fa-python"   # Font Awesome icon for Python
+        name: "Python"
+      - icon: fa-r-project
+        name: R
+      - icon: "fa-js-square"  # Font Awesome icon for JavaScript
+        name: "JavaScript"
+      - icon: "fa-java"  # Font Awesome icon for Java
+        name: "Java"

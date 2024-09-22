@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto dark">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><head>
+  <title>aafu theme</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Personal Website for Søren Orm" />
+<meta name="author" content="Søren Orm Hansen" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.134.2" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">        <link rel="manifest" href="/site.webmanifest">        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"> 
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+  <link rel="stylesheet" href="/css/aafu.css" />
+
+
+
+
+<link href="/main.css" rel="stylesheet" />
+
+
+  
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+    if (theme) {
+      theme === "dark"
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    } else if (html.classList.contains("dark")) {
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      html.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    }
+
+    window.onload = () => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (window.localStorage.getItem("theme") === "dark") {
+        themeToggle.classList.remove("bi-moon-fill");
+        themeToggle.classList.add("bi-brightness-high");
+      } else {
+        themeToggle.classList.add("bi-moon-fill");
+        themeToggle.classList.remove("bi-brightness-high");
+      }
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+  </head>
+  <body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header
+  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between"
+>
+  <div>
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="http://localhost:1313/">Home</a>    
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/blog">Blog</a>
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/resources">Resources</a>
+  </div>
+  
+  <i
+    class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+    onclick="lightDark(this)"
+  ></i>
+</header>
+
+<script>
+  const lightDark = (el) => {
+    let html = document.querySelector("html");
+    if (html.classList.contains("dark")) {
+      html.classList.remove("dark");
+      el.classList.add("fa-moon");
+      el.classList.remove("fa-sun");
+      window.localStorage.setItem("theme", "light");
+    } else {
+      html.classList.add("dark");
+      el.classList.add("fa-sun");
+      el.classList.remove("fa-moon");
+      window.localStorage.setItem("theme", "dark");
+    }
+  };
+</script>
+
+    
+    <main class="grow">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-2 sm py-2">
+  <div class="col-span-2">
+    <div class="bg-gray-300 dark:bg-darker rounded drop-shadow-md p-2">
+      <div class="flex flex-col justify-center">
+        <div class=""><div class="w-100 h-100 flex justify-center p-4">
+  <img
+    class="rounded rounded-full"
+    src="/images/profile2.jpg"
+    alt="Søren Orm Hansen"
+    style="max-width: 250px"
+  />
+</div>
+</div>
+        <div class="p-2 text-center">
+          <h1 class="mb-0">Søren Orm Hansen</h1>
+<h2 class="mb-0">Social Data Scientist</h2>
+<h3 class="mb-4">St Andrews, Scotland</h3>
+<div class="mb-4 flex flex-wrap justify-center">
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="mailto:sorenorm@live.dk">
+      <i class="mt-1 fas fa-envelope"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://www.linkedin.com/in/s%C3%B8ren-orm-hansen-604333281/">
+      <i class="mt-1 fab fa-linkedin-in"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://stackoverflow.com/users/26797323/sorm">
+      <i class="mt-1 fab fa-stack-overflow"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://github.com/sorenorm">
+      <i class="mt-1 fab fa-github"></i>
+    </a>
+  </div>
+  
+</div>
+ <footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700  pt-2 ">
+  <p class="markdownify">powered by <a href="https://gohugo.io/">hugo</a> &amp; deployed on <a href="https://www.cloudflare.com/">Cloudflare</a></p>
+  <p >
+    <i>
+      <a href="https://github.com/darshanbaral/aafu">
+        aafu
+      </a>
+    </i>
+    by
+    <a href="https://www.darshanbaral.com/">
+      darshan
+    </a>
+  </p>
+</footer>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-span-3 relative">
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion active">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-user"></i>
+          About Me</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><p class="markdownify">
+  I am currently studying for a MSc. in Social Data Science at the University of Copenhagen. My professional interests include working with data science methods for social good, for understanding cognition, and investigating social complexity.
+</p>
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-graduation-cap"></i>
+          Education</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+
+<h4 style="text-decoration: underline;">MSc. in Social Data Science</h4>
+<p class="mb-0" >2022 - *Present* &middot; University of Copenhagen</p>
+
+
+<p>
+  Thesis:
+  <a href="#"><i>Beyond Representation: Diversity of Speakers and Information Diffusion in European Parliaments</i></a>
+</p>
+
+
+
+
+<h4 style="text-decoration: underline;">BSc. in Cognitive Science and Mathematics</h4>
+<p >2019 - 2022 &middot; Aarhus University</p>
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-briefcase"></i>
+          Experiences</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+<h4 style="text-decoration: underline;">Data Analyst</h4>
+<p class="mb-0">
+  March 2021 - September 2022 &middot; 
+  <a href="https://systematic.com/en-gb/">Systematic A/S</a>
+  
+</p>
+
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<ul>
+<li>Creating statistical models informing business decisions</li>
+<li>Reporting insights for statistical literate and non-technical audiences</li>
+<li>Helped creating project specific dash boards in PowerBI</li>
+<li>Data quality assurance</li>
+</ul>
+
+</div>
+
+
+
+<h4 style="text-decoration: underline;">Treasurer</h4>
+<p class="mb-0">
+  December 2020 - June 2022 &middot;  Cognitive Science Association 
+</p>
+
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<ul>
+<li>Co-leading a team of 20 volunteers</li>
+<li>Organising biweekly educational and social events for 200+ guests</li>
+<li>Playing a central role in stabilizing the organization during the post-COVID recovery period.</li>
+</ul>
+
+</div>
+
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-star"></i>
+          Extra-Curricular Activities</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+<h4 style="text-decoration: underline;">St Andrews AI Safety Fellowship</h4>
+<p class="mb-0">
+  2024 &middot;   Investigating AI risks, regulatory challenges, and long-term impact. 
+</p>
+
+
+
+<h4 style="text-decoration: underline;">Data Science Volunteer</h4>
+<p class="mb-0">
+  2024 &middot;   Consulted in the development of a vision transformer for key-point tracking, assisted with computational analysis of experiments, and configured and maintained GPUs in the Allodi laboratory at St Andrews University. 
+</p>
+
+
+
+<h4 style="text-decoration: underline;">Presenter at St Leonard&#39;s Postgraduate Collage Lecture Series</h4>
+<p class="mb-0">
+  2023 &middot;   Invited to present my research on parliamentary representation using ParlaMint2.1. 
+</p>
+
+
+
+<h4 style="text-decoration: underline;">Madagascar Research and Conservation Institute</h4>
+<p class="mb-0">
+  2024 &middot;   Community development volunteer, working on various projects including building a clinic for a local doctor. 
+</p>
+
+
+
+<h4 style="text-decoration: underline;">Save the Children Youth</h4>
+<p class="mb-0">
+  2018-2019 &middot;   Volunteer, helping refugee children getting to know their new home town. 
+</p>
+
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-book"></i>
+          Publications</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+
+
+<h4 style="text-decoration: underline;">Journal Articles</h4><p class="foo indent-8">2020.
+
+
+<a href="https://tidsskrift.dk/lwo/article/view/121221">
+  <em>EMMA: Danish Natural-Language Processing of Emotion in Text.</em>
+</a>
+
+
+Esben Kran and Søren Orm.
+Journal of Language Works Vol. 5 (No. 1), 92-110.
+</p>
+
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-project-diagram"></i>
+          Projects</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+<h4>
+  <a href="https://www.udemy.com/course/masteringd3js/">Learning 3D.js</a>
+</h4>
+<p class="markdownify indent-8">I am currently taking my data visualisation skills to the next level learning 3D.js. 3D.js allows for dynamic and interactive visualisation of data and easy integration on web sites.</p>
+
+<h4>
+  <a href="#">Creating a GDPR bot</a>
+</h4>
+<p class="markdownify indent-8">I am learning the langchain workflow through the creation of a constructed agent, which can answer questions pertaining to the GDPR.</p>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-cogs"></i>
+          Skills</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><ul class="pl-0">
+  
+  <li class="list-unstyled mb-2">Effective Communication \t Data Ethics</li>
+  
+  <li class="list-unstyled mb-2">GDPR</li>
+  
+  <li class="list-unstyled mb-2">Advanced Statistics</li>
+  
+  <li class="list-unstyled mb-2">Data Visualisation</li>
+  
+  <li class="list-unstyled mb-2">Web Scraping</li>
+  
+  <li class="list-unstyled mb-2">Machine learning</li>
+  
+  <li class="list-unstyled mb-2">Deep learning</li>
+  
+  <li class="list-unstyled mb-2">NLP</li>
+  
+  <li class="list-unstyled mb-2">Cross-Disciplinary Collaboration</li>
+  
+  <li class="list-unstyled mb-2">Data Management</li>
+  
+  <li class="list-unstyled mb-2">PowerBI</li>
+  
+</ul>
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-code"></i>
+          Programming Languages</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><ul class="pl-0">
+    
+    <li class="list-unstyled mb-2">
+      <i class="fab fa-python" style="font-size: 2em; margin-right: 10px;"></i> 
+      <span style="font-size: 1.5em;">Python</span> 
+    </li>
+    
+    <li class="list-unstyled mb-2">
+      <i class="fab fa-r-project" style="font-size: 2em; margin-right: 10px;"></i> 
+      <span style="font-size: 1.5em;">R</span> 
+    </li>
+    
+    <li class="list-unstyled mb-2">
+      <i class="fab fa-js-square" style="font-size: 2em; margin-right: 10px;"></i> 
+      <span style="font-size: 1.5em;">JavaScript</span> 
+    </li>
+    
+    <li class="list-unstyled mb-2">
+      <i class="fab fa-java" style="font-size: 2em; margin-right: 10px;"></i> 
+      <span style="font-size: 1.5em;">Java</span> 
+    </li>
+    
+  </ul>
+  </div>
+      </div>
+    </div>
+    
+
+    <script src="/js/accordion.js"></script>
+  </div>
+</div>
+
+    </main>
+    
+  </body>
+</html>
