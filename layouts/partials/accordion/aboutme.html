@@ -1,3 +1,11 @@
-<p class="markdownify">
-  {{ .Site.Params.aboutme.description | markdownify }}
+
+
+{{ range.Site.Params.aboutme.list }}
+<p class="markdownify">{{- .description | markdownify -}}</p>
+
+{{ if .interests }}
+<p>
+  <b>Interests:</b> <i>{{ .interests }}</i>
 </p>
+{{ end }}
+{{ end }}
