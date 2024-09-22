@@ -57,9 +57,9 @@ params:
   aboutme:
     title: About Me
     icon: fas fa-user
-    description: > 
-      I am currently studying for a MSc. in Social Data Science at the University of Copenhagen. 
-      My professional interests include working with data science methods for social good, for understanding cognition, and investigating social complexity.
+    list:
+      - description: I am currently studying for a MSc. in Social Data Science at the University of Copenhagen. My professional interests include working with data science methods for social good, for understanding cognition, and investigating social complexity.
+        interests: Data science for social good, explainable AI, data visualisation, algorithmic fairness, social complexity. 
   education:
     title: Education
     icon: fas fa-graduation-cap
@@ -75,6 +75,7 @@ params:
           - Advanced statistics, econometrics, and GLMs
           - Machine learning, deep learning, and NLP
           - Web scraping, digital methods, and social network analysis
+          - Exchange semester at St Andrews University studying Health Data Science
       - degree: BSc. in Cognitive Science and Mathematics
         college: Aarhus University
         college_url: https://bachelor.au.dk/en/cognitivescience
