@@ -52,7 +52,7 @@ params:
     - item: publication
     - item: project
     #- item: skill
-    - item: hobby
+    #- item: hobby
     - item: hobby2
   aboutme:
     title: About Me
