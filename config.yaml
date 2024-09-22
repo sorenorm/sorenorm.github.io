@@ -57,7 +57,9 @@ params:
   aboutme:
     title: About Me
     icon: fas fa-user
-    description: I am currently studying for a MSc. in Social Data Science at the University of Copenhagen. My professional interests include working with data science methods for social good, for understanding cognition, and investigating social complexity.
+    description: > 
+      I am currently studying for a MSc. in Social Data Science at the University of Copenhagen. 
+      My professional interests include working with data science methods for social good, for understanding cognition, and investigating social complexity.
   education:
     title: Education
     icon: fas fa-graduation-cap
@@ -66,9 +68,10 @@ params:
         college: University of Copenhagen
         dates: 2022 - *Present*
         thesis_title: "Beyond Representation: Diversity of Speakers and Information Diffusion in European Parliaments"
-        thesis_url: "#"
+        #thesis_url: "#"
       - degree: BSc. in Cognitive Science and Mathematics
         college: Aarhus University
+        thesis_title: "Bringing Numerical Stability to the Hierarchical Gaussian Filter"
         dates: 2019 - 2022
   experience:
     title: Experiences
@@ -169,23 +172,6 @@ params:
       - title: Creating a GDPR bot
         url: "#"
         description: I am learning the langchain workflow through the creation of a constructed agent, which can answer questions pertaining to the GDPR.
-      #- title: Project 3
-      #  url: "#"
-      #  description: Description of the project
-      #- title: Project 4
-      #  url: "#"
-      #  description: Description of the project
-  #skill:
-  #  title: Skills
-  #  panelId: skill-panel
-  #  icon: fas fa-cogs
-  #  list:
-  #    - skill: "Skill 1, Skill 2"
-  #      skillrating: 90
-  #    - skill: Skill 3
-  #      skillrating: 80
-  #    - skill: Skill 4
-  #      skillrating: 50
   hobby:
     title: Skills
     icon: fas fa-cogs
@@ -213,3 +199,5 @@ params:
         name: "JavaScript"
       - icon: "fa-java"  # Font Awesome icon for Java
         name: "Java"
+      - icon: 'fas fa-database'
+        name: SQL
