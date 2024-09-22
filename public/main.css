@@ -1157,6 +1157,9 @@ blockquote {
 .ml-4 {
   margin-left: 1rem !important;
 }
+.mr-2 {
+  margin-right: 0.5rem !important;
+}
 .mr-4 {
   margin-right: 1rem !important;
 }
@@ -1326,6 +1329,10 @@ blockquote {
   --tw-text-opacity: 1 !important;
   color: rgb(209 213 219 / var(--tw-text-opacity)) !important;
 }
+.text-gray-800 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(31 41 55 / var(--tw-text-opacity)) !important;
+}
 .underline {
   text-decoration-line: underline !important;
 }
@@ -1400,6 +1407,10 @@ blockquote {
 }
 :is(.dark .dark\:prose-invert) :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   color: #e5e7eb;
+}
+.hover\:bg-gray-100:hover {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity)) !important;
 }
 .hover\:bg-gray-200:hover {
   --tw-bg-opacity: 1 !important;
