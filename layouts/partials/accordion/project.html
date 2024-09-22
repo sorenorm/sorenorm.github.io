@@ -1,6 +1,12 @@
 {{ range.Site.Params.project.list }}
 <h4>
-  <a href="{{ .url }}">{{- .title -}}</a>
+  <a href="{{ .url }}" target="_blank">{{- .title -}}</a>
 </h4>
 <p class="markdownify indent-8">{{- .description | markdownify -}}</p>
+
+{{ if .progress }}
+<p>
+  <b>Progress:</b> {{ .progress }}
+</p>
+{{ end }}
 {{ end }}

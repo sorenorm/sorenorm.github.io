@@ -1,9 +1,17 @@
 {{ range .Site.Params.education.list }}
 
 <h4 style="text-decoration: underline;">{{ .degree }}</h4>
-<p {{ if .thesis_title }}class="mb-0" {{ end }}>
+
+{{ if .college_url }}
+<p {{ if .thesis_title }}class="mb-0" {{ end }}></p>
+  {{- .dates }} &middot; <a href="{{ .college_url }}" target="_blank"><i>{{ .college -}}</i></a>
+</p>
+{{ else }}
+<p {{ if .thesis_title }}class="mb-0" {{ end }}></p>
   {{- .dates }} &middot; {{ .college -}}
 </p>
+{{ end }}
+
 {{ if .thesis_title }}
 {{ if .thesis_url }}
 <p>
@@ -16,4 +24,15 @@
 </p>
 {{ end }}
 {{ end }}
+
+{{ if .details }}
+<p></p>
+  Curriculum included:
+</p>
+<div class="prose prose-stone dark:prose-invert max-w-none">
+{{ .details | markdownify }}
+</div>
+{{ end }}
+
+
 {{ end }}

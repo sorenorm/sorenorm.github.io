@@ -66,13 +66,24 @@ params:
     list:
       - degree: MSc. in Social Data Science
         college: University of Copenhagen
+        college_url: https://studies.ku.dk/masters/social-data-science/
         dates: 2022 - *Present*
         thesis_title: "Beyond Representation: Diversity of Speakers and Information Diffusion in European Parliaments"
         #thesis_url: "#"
+        details: |1-
+          - Data ethics, GDPR, and data management
+          - Advanced statistics, econometrics, and GLMs
+          - Machine learning, deep learning, and NLP
+          - Web scraping, digital methods, and social network analysis
       - degree: BSc. in Cognitive Science and Mathematics
         college: Aarhus University
+        college_url: https://bachelor.au.dk/en/cognitivescience
         thesis_title: "Bringing Numerical Stability to the Hierarchical Gaussian Filter"
         dates: 2019 - 2022
+        details: |1-
+          - Cognitive psycology, models of cognition, and social- and cultural modelling
+          - Frequentist and Bayesian statistics, machine learning, and experimental design
+          - Eye- and mouse tracking, EEG and fMIR analysis
   experience:
     title: Experiences
     icon: fas fa-briefcase
@@ -84,7 +95,7 @@ params:
         details: |1-
           - Creating statistical models informing business decisions 
           - Reporting insights for statistical literate and non-technical audiences 
-          - Helped creating project specific dash boards in PowerBI 
+          - Creating project specific dash boards in PowerBI 
           - Data quality assurance
       - position: Treasurer
         dates: December 2020 - June 2022
@@ -169,6 +180,7 @@ params:
       - title: Learning 3D.js
         url: "https://www.udemy.com/course/masteringd3js/"
         description: I am currently taking my data visualisation skills to the next level learning 3D.js. 3D.js allows for dynamic and interactive visualisation of data and easy integration on web sites.
+        progress: 1/9 sections.
       - title: Creating a GDPR bot
         url: "#"
         description: I am learning the langchain workflow through the creation of a constructed agent, which can answer questions pertaining to the GDPR.
@@ -199,5 +211,7 @@ params:
         name: "JavaScript"
       - icon: "fa-java"  # Font Awesome icon for Java
         name: "Java"
+      - icon: fab fa-html5
+        name: html
       - icon: 'fas fa-database'
         name: SQL

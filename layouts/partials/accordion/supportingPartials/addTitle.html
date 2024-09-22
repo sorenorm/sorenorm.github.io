@@ -1,6 +1,6 @@
 {{ if (eq .ind "title") }}
 {{ if (index .all `url`) }}
-<a href="{{ index .all `url` }}">
+<a href="{{ index .all `url` }}" target="_blank">
   <em>
     {{- index .all .ind -}}
     {{- cond (eq (substr (index .all .ind) -1 1) ".") "" "." -}}
