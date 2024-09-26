@@ -58,8 +58,8 @@ params:
     title: About Me
     icon: fas fa-user
     list:
-      - description: I am currently studying for a MSc. in Social Data Science at the University of Copenhagen. My professional interests include working with data science methods for social good, for understanding cognition, and investigating social complexity.
-        interests: Data science for social good, explainable AI, data visualisation, algorithmic fairness, social complexity. 
+      - description: I'm Søren Orm Hansen, currently pursuing an MSc in Social Data Science at the University of Copenhagen. My professional interests lie at the intersection of data science, social good, cognitive science, and the exploration of social complexity..
+        interests: Data Science for Social Good | Explainable AI | AI Safety | Algorithmic Fairness | Data Visualization | Social Complexity | NLP | Data Ethics. 
   education:
     title: Education
     icon: fas fa-graduation-cap
