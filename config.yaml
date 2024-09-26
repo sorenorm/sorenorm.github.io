@@ -181,7 +181,7 @@ params:
       - title: Learning 3D.js
         url: "https://www.udemy.com/course/masteringd3js/"
         description: I am currently taking my data visualisation skills to the next level learning 3D.js. 3D.js allows for dynamic and interactive visualisation of data and easy integration on web sites.
-        progress: 2/9 sections.
+        progress: 3/9 sections complete.
       - title: Creating a GDPR bot
         url: "#"
         description: I am learning the langchain workflow through the creation of a constructed agent, which can answer questions pertaining to the GDPR.
