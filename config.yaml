@@ -67,7 +67,7 @@ params:
       - degree: MSc. in Social Data Science
         college: University of Copenhagen
         college_url: https://studies.ku.dk/masters/social-data-science/
-        dates: 2022 - *Present*
+        dates: 2022 - 2024
         thesis_title: "Beyond Representation: Diversity of Speakers and Information Diffusion in European Parliaments"
         #thesis_url: "#"
         details: |1-
@@ -128,7 +128,7 @@ params:
         details: |1-
           Invited to present my research on parliamentary representation using ParlaMint2.1.
       - activity: Madagascar Research and Conservation Institute
-        dates: '2024'
+        dates: '2018'
         company: ''
         url: ''
         details: |1-
@@ -181,7 +181,7 @@ params:
       - title: Learning 3D.js
         url: "https://www.udemy.com/course/masteringd3js/"
         description: I am currently taking my data visualisation skills to the next level learning 3D.js. 3D.js allows for dynamic and interactive visualisation of data and easy integration on web sites.
-        progress: 9/11 sections complete.
+        progress: Done.
       - title: Creating a GDPR bot
         url: "#"
         description: I am learning the langchain workflow through the creation of a constructed agent, which can answer questions pertaining to the GDPR.
