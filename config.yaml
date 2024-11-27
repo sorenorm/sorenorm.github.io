@@ -178,10 +178,12 @@ params:
     title: Projects
     icon: fas fa-project-diagram
     list:
-      - title: Learning 3D.js
-        url: "https://www.udemy.com/course/masteringd3js/"
-        description: I am currently taking my data visualisation skills to the next level learning 3D.js. 3D.js allows for dynamic and interactive visualisation of data and easy integration on web sites.
-        progress: Done.
+      - title: Learning RI-CLPM
+        description: I'm getting to know the Random Intercept Cross-Lagged Panel Model for a project investigating what activities social media is taking time from and how this is modulated by socio-economic conditions.
+        #progress: Done.
+        #url: www.example.com
+      - title: Learning napari
+        decription: I'm learning napari for an upcoming project, where I am to build a GUI for an image segmentation model built for neuro-biologists.
       - title: Creating a GDPR bot
         url: "#"
         description: I am learning the langchain workflow through the creation of a constructed agent, which can answer questions pertaining to the GDPR.
