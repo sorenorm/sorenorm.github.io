@@ -83,7 +83,7 @@ params:
         dates: 2019 - 2022
         details: |1-
           - Cognitive psycology, models of cognition, and social- and cultural modelling
-          - Frequentist and Bayesian statistics, machine learning, and experimental design
+          - Frequentist and Bayesian statistics, machine learning, and agent-based modelling
           - Eye- and mouse tracking, EEG and fMIR analysis
   experience:
     title: Experiences
@@ -182,8 +182,9 @@ params:
         description: I'm getting to know the Random Intercept Cross-Lagged Panel Model for a project investigating what activities social media is taking time from and how this is modulated by socio-economic conditions.
         #progress: Done.
         #url: www.example.com
-      - title: Learning napari
-        decription: I'm learning napari for an upcoming project, where I am to build a GUI for an image segmentation model built for neuro-biologists.
+      - title: napari plugin
+        decription: I'm developing a napari plugin, which is going to be a code-free interface with a deep ensamble U-Net that can identify different cells in microscopy images. 
+        url: https://github.com/sorenorm/DeepEnsampleGUI
       - title: Creating a GDPR bot
         url: "#"
         description: I am learning the langchain workflow through the creation of a constructed agent, which can answer questions pertaining to the GDPR.
