@@ -183,8 +183,8 @@ params:
         #progress: Done.
         #url: www.example.com
       - title: napari plugin
-        decription: I'm developing a napari plugin, which is going to be a code-free interface with a deep ensamble U-Net that can identify different cells in microscopy images. 
         url: https://github.com/sorenorm/DeepEnsampleGUI
+        decription: I'm developing a napari plugin, which is going to be a code-free interface with a deep ensamble U-Net that can identify different cells in microscopy images. 
       - title: Creating a GDPR bot
         url: "#"
         description: I am learning the langchain workflow through the creation of a constructed agent, which can answer questions pertaining to the GDPR.
