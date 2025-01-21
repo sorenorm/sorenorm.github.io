@@ -7,6 +7,4 @@ description: "You have found your way to the blog..."
 draft: false
 ---
 
-# Welcome to the blog!
-
 You have found your way to the blog. In here, I will keep track of the projects I have worked on in school, at work, and in my spare time. Enjoy reading! 
